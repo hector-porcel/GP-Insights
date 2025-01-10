@@ -1,0 +1,474 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1600px;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav li {
+    list-style: none;
+    margin: 20px 0;
+    margin-bottom: 65px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #ff0000;
+}
+
+main {
+    padding: 20px;
+    margin-left: 370px;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-right img {
+    max-width: 250px;
+    height: auto;
+    margin-left: -400px;
+}
+
+#presentacio img{
+    max-width: 120px;
+    margin-left: 0px;
+}
+
+#galeria img {
+    object-fit: cover;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 250px;
+}
+
+.galeria-logos img {
+    width: 1000px;
+}
+
+.galeria-pilots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 1000px;
+}
+
+.galeria-pilots img {
+    width: 100px;
+    height: 100px;
+}
+
+.galeria-campions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 500px;
+}
+
+.galeria-campions img {
+    width: 100px;
+    height: 100px;
+}
+
+.galeria-equips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 700px;
+}
+
+.galeria-equips img {
+    width: 100px;
+}
+
+.galeria-regles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 400px;
+}
+
+.galeria-regles img {
+    width: 100px;
+}
+
+#enllacos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#enllacos li {
+    margin-bottom: 10px;
+}
+
+#enllacos a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#enllacos a:hover {
+    text-decoration: underline;
+    color: #cc0000;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 20px -20px;
+    text-align: center;
+    width: 1220px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #ff0000;
+    margin: 10px 0;
+}
+
+section h3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section h3 ul li {
+    margin: 0;
+    display: inline-block;
+}
+
+section h3 ul li span {
+    display: inline;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.pilots2024 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.pilots2024 li {
+    list-style-type: none;
+    text-align: center;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pilots2024 img:hover{
+    transform: scale(1.2);
+}
+
+.pilots2024 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.pilots2024 li span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+#equips {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#equips h2 {
+    margin-left: -40px;
+}
+
+#equips li {
+    list-style-type: none;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#equips img {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#equips2024 img {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#equips img:hover {
+    transform: scale(1.2);
+}
+
+#equips span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.equips2024 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.equips2024 li {
+    list-style-type: none;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#campions li {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#campions li img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Estils per als enllaços dels pilots */
+#graellaPilots {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pilot {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.pilot img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pilot img:hover {
+    transform: scale(1.1);
+}
+
+.pilot p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estils per al detall del pilot */
+#detallPilot {
+    text-align: center;
+    margin-left: -20px;
+    padding: 20px;
+}
+
+#pilotFoto {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#pilotNom {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#pilotEquip,
+#pilotDataNaixement,
+#pilotBiografia {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#pilotEstadistiques table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#pilotEstadistiques table, #pilotEstadistiques th, #pilotEstadistiques td {
+    border: 1px solid #ddd;
+}
+
+#pilotEstadistiques th, #pilotEstadistiques td {
+    padding: 10px;
+    text-align: left;
+}
+
+#pilotEstadistiques th {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Contenidor de les fotos dels pilots */
+#graellaPilots {
+    display: grid; /* Configuració de graella per organitzar */
+    grid-template-columns: repeat(6, 1fr); /* 6 columnes de mida igual */
+    grid-gap: 10px; /* Espai entre les fotos */
+    justify-content: center; /* Centra la graella */
+    margin: 20px auto; /* Marges per centrar-lo a la pàgina */
+    max-width: 1200px; /* Amplada màxima per adaptar-se */
+}
+
+/* Efecte hover per a les imatges */
+.pilot:hover {
+    transform: scale(1.05); /* Augmenta la mida una mica al passar el ratolí */
+}
+
+.pilot p{
+    margin-left: -30px;
+}
